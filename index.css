@@ -1,0 +1,109 @@
+.header-cover{
+  width:100vw;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+}
+#hamburger span{
+  display:none;
+}
+.logo{
+  padding:10px;
+  font-size:35px;
+  color:00277e; 
+}.menu{
+  line-height:40px;
+  list-style: none;
+  display:flex;
+  font-size:20px;
+  color:00277e;
+}
+.image{
+ width:50%;
+ position:absolute;
+ top:10%;
+ right:0%; 
+}
+li{
+  padding-left:10px;
+  padding-right:40px;
+}
+
+.catch{
+font-size:70px; 
+color:00277e;
+}
+.blue-box{
+  width:75%;
+  height:200px;
+  background-color:#000B62;
+  
+
+}
+
+.message{
+margin-top:15%;
+}
+
+@media screen and (max-width: 480px) {
+ .logo{
+ font-size:35px;
+ color:000277e;
+ }
+ .menu{
+   display: none;
+ }
+ .image{
+ width:90%;
+ }
+ .message{
+   padding-top:30vh;
+   text-align: center;
+ }
+ .catch{
+   margin-top:10vh;
+   margin-bottom:10vh;
+   font-size:35px;
+   color:00277E;
+ }
+
+ .blue-box{
+   width:90%;
+
+ }
+ #hamburger {
+  width: 40px;
+  height: 40px;
+  margin-right:20px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+  top: 15px;
+  right: 20px;
+  transition: 0.4s;
+}
+
+#hamburger span {
+  position: absolute;
+  left: 2px;
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color:#00277E;
+  transition: 0.8s;
+}
+
+#hamburger span:nth-of-type(1) {
+  top: 10px; /* ハンバーガーメニューの1本目の棒 */
+}
+
+#hamburger span:nth-of-type(2) {
+  top: 20px; /* ハンバーガーメニューの2本目の棒 */
+}
+
+#hamburger span:nth-of-type(3) {
+  top: 30px; /* ハンバーガーメニューの3本目の棒 */
+}
+
+}
